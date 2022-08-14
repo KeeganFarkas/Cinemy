@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemy - Find your favorite movies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d7eaa0fcbe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="container">
+        <div class="row">
+          <nav>
+            <figure class="nav__logo--wrapper">
+              <img
+                src="./assets/cinemy-logo.png"
+                alt=""
+                class="nav__logo--img"
+              />
+              <span class="nav__logo--name blue">cinemy</span>
+            </figure>
+            <ul class="nav__links">
+              <li class="nav__list">
+                <a
+                  href=""
+                  class="nav__link blue link__hover-effect link__hover-effect--blue"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__list">
+                <a
+                  href="/find.html"
+                  class="nav__link link__hover-effect link__hover-effect--black"
+                  >Find your movie</a
+                >
+              </li>
+              <li class="nav__list">
+                <a
+                  class="nav__link nav__btn btn__hover--blue"
+                  onclick="notImplemented()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="menu__btn" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu__backdrop">
+              <div class="menu__btn menu__btn--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </div>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link blue" onclick="closeMenu()"
+                    >Home</a
+                  >
+                </li>
+                <li class="menu__list">
+                  <a
+                    href="./find.html"
+                    class="menu__link blue"
+                    onclick="closeMenu()"
+                    >Find your movie</a
+                  >
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link blue" onclick="notImplemented()"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <header class="landing__header">
+            <div class="header__description">
+              <h1 class="blue">United State's most awarded movie platform</h1>
+              <h2 class="header__sub-title">
+                FIND YOUR FAVORITE MOVIES WITH <span class="blue">CINEMY</span>
+              </h2>
+              <form class="header__input--wrapper">
+                <input
+                  type="text"
+                  placeholder="Search by Title or Keyword"
+                  class="header__input"
+                  required
+                />
+                <button
+                  type="button"
+                  class="header__input--btn"
+                  onclick="homeSearch(event)"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/undraw_home_cinema.svg"
+                alt=""
+                class="header__img"
+              />
+            </figure>
+          </header>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
