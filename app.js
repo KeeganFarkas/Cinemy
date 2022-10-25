@@ -5,7 +5,7 @@ function homeSearch(event) {
     localStorage.setItem("search", event.path[2][0].value);
   }
 
-  window.location.href = `${origin}/find.html`;
+  window.location.href = `${origin}/Cinemy/find.html`;
 }
 
 function notImplemented() {
