@@ -1,6 +1,6 @@
 const resultsList = document.querySelector(".results__list");
 const resultsSearched = document.querySelector(".results__searched");
-let userSearch = "popular";
+let userSearch = "batman";
 
 async function registerResults(event) {
   if (localStorage.getItem("search")) {
